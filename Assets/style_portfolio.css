@@ -1,0 +1,43 @@
+.content-inside {
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 50%;
+}
+
+body {
+  background-color: #cecece;
+}
+
+#header1 {
+    font-family: 'Old Standard TT', serif;
+}
+
+#navname {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding: auto;
+    margin: 5px 5px 5px 5px;
+}
+
+.footer {
+    background-color: white;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.fa {
+    margin: 18px 5px 16px 5px;
+    color: #656565;
+    width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 600px;
+  }
+};
