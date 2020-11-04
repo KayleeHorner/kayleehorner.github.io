@@ -4,75 +4,75 @@
   <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Kaylee</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/style_contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT&display=swap" rel="stylesheet">
+    
 
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <span class="navbar-brand text-info" id="navname">Kaylee Horner</span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper white z-depth-0">
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger side-nav"><i class="material-icons" id="hamburger">menu</i></a>
         
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">About</a>
+      <div>
+        <ul class="nav-mobile right hide-on-med-and-down side-nav" id="nav-mobile">
+          <li class="nav-text">
+            <a href="./index.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          <li>
+            <a class="nav-text" href="./portfolio.html">Portfolio</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./contact.html">Contact <span class="sr-only">(current)</span></a>
+          <li>
+            <a class="nav-text active" href="./contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
+  </div>
 
-    <div class="p-5">
-    <main class="container bg-white">
+
+  <div class="row container">
+    <div class="col s12">
+    
+        <h2 class="center" id="header1">Contact</h2>
+        <hr>
+
+
+
+    </div>
       <div class="row">
-        <div class="col-md-12 mt-4">
-          <h1 class="text-center justify-content-center" id="header1">Contact Me</h1>
-          <hr>
-        </div>
-      <div class="row">
-        <div class="col-12 col-md-12">
+        <div class="col m12">
           <form class="form-group">
-            <div class="col-md-12 col-12 mr-4 mt-2">
-              <div class="form-row lg-form">
-                <label for="exampleFormControlInput1">Name</label>
+            <div class="col s12 input-field">
+
                 <input type="text" class="form-control" placeholder="Name">
-              </div>
+                <label for="name">Name</label>
             </div>
-            <div class="col-md-12 col-12 mr-4 mt-2">
-              <div class="lg-form form-row">
-                <label for="exampleFormControlInput1">Email</label>
+            <div class="col s12 input-field">
+        
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                <label for="email">Email</label>
             </div>
+            <div class="col s12 input-field">
+        
+                <textarea class="materialize-textarea" placeholder="Message"></textarea>
+                <label for="message">Message</label>
             </div>
-            <div class="col-md-12 col-12 mr-4 mt-2">
-              <div class="form-row lg-form">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-info btn-sm ml-3 mt-4 mb-4">Submit</button>
+            <button type="submit" class="btn center">Submit</button>
           </form>
         </div>
       </div>
       </div>
-    </main>
     </div>
       
 
-    <footer class="footer row">
-      <div class="col-md-12 text-center">
+   
+    <footer class="page-footer white">
+      <div class="col s12 center-align">
         <a href="https://www.linkedin.com/kayleehorner" target="_blank"><i class="fa fa-linkedin"></i></a>
         <a href="https://www.kayleeahorner.com" target="_blank"><i class="fa fa-behance"></i></a>
         <a href="https://www.instagram.com/hearmeoutsis" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -80,9 +80,10 @@
         <a href="https://www.pinterest.com/hearmeoutsis" target="_blank"><i class="fa fa-pinterest"></i></a>
         <a href="mailto:kayleeahorner@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
       </div>
-    </footer>
+    </footer>  
 
-  <script
+
+    <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous">
@@ -92,11 +93,10 @@
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous">
   </script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script src="./Assets/contact_script.js"></script>
   
   </body>
 </html>
+
