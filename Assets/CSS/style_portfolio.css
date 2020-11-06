@@ -1,10 +1,9 @@
-.content-inside {
-  padding: 20px;
-  padding-bottom: 50px;
+.nav-text {
+  color: #000;
 }
 
-.nav-text {
-  color: rgb(194, 192, 192);
+a {
+  color: #000;
 }
 
 h1 {
