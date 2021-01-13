@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html lang="en-us">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+
 
   <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,24 +51,27 @@
     </div>
 
     <div class="row">
-      <div class="col m12">
-        <form class="form-group">
+      <div class="col m12 contact-area">
+        <form class="form-group" method="post" action="contactengine.php">
           <div class="col s12 input-field">
-            <input type="text" class="form-control" placeholder="Name">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Name">
             <label for="name">Name</label>
           </div>
           <div class="col s12 input-field">
-            <input type="email" class="form-control" placeholder="Email">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
             <label for="email">Email</label>
           </div>
           <div class="col s12 input-field">
-             <textarea class="materialize-textarea" placeholder="Message"></textarea>
+             <textarea class="materialize-textarea" placeholder="Message" name="message" id="message"></textarea>
               <label for="message">Message</label>
           </div>
-          <button class="btn waves-effect grey center" type="submit" name="action"> Submit
-            <i class="material-icons right">send</i>
-          </button>
+          <input value="Submit" type="submit" name="submit" class="submit-button">
+          
+          <!-- <button class="btn waves-effect grey center">Submit
+            <i class="material-icons right">send</i></button> -->
+          </input>
         </form>
+        <div style="clear: both;"></div>
       </div>
     </div>
    
