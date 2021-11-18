@@ -1,47 +1,131 @@
-.nav-text {
-  color: #000;
-}
-
-a {
-  color: #000;
-}
-
-h1 {
-  font-family: "Bebas Neue", sans-serif;
-}
-
-h5 {
-  font-family: "Bebas Neue", sans-serif;
+h3 {
+  font-family: "Runda", sans-serif;
   letter-spacing: 2px;
+  font-size: 18px;
 }
 
-#hamburger {
-  color: #dddddd;
-}
-
-.footer {
-  background-color: white;
-  height: 50px;
-  flex-shrink: 0;
+.projects {
   display: flex;
+  flex-flow: wrap;
 }
 
-.footer-txt {
-  color: #ddd;
-  font-size: 8pt;
+.profiles {
+  display: flex;
+  width: 65%;
+  margin: auto;
 }
 
-.fa {
-  margin: 18px 5px 16px 5px;
-  color: #000;
-  width: 40px;
+.card {
+  background-color: #f9f9f9;
+  width: 29%;
+  padding: 0.75em;
+  margin: 0 auto 2em auto;
+  overflow: scroll;
+  filter: drop-shadow(0 0 0.5rem rgb(241, 241, 241));
 }
 
-@media screen and (max-width: 768px) {
-  .wrapper {
-    width: 600px;
+.card-image img {
+  width: 450px;
+}
+
+.card-content {
+  padding: 10px !important;
+}
+
+.card-action {
+  padding: 10px 2px !important;
+}
+
+.card-action a {
+  color: #c97c5d !important;
+  padding: 0 0.5em;
+  margin: auto !important;
+}
+
+.card-action a:hover {
+  font-weight: 600;
+  cursor: pointer;
+  color: #59656f !important;
+}
+
+@media screen and (max-width: 992px) {
+  .projects {
+    flex-direction: column !important;
+    flex-flow: nowrap;
   }
-  .parallax-container {
-    height: 100px;
+
+  .card {
+    display: flex;
+    background-color: #f9f9f9;
+    width: 90%;
+
+  }
+
+  .card-image img {
+    width: 250px !important;
+  }
+
+  .card-action {
+    width: 95%;
+    margin-left: 0.75em;
+  }
+
+  .profiles {
+    display: flex;
+    width: 90%
+  }
+
+  .profiles .card {
+    margin: auto;
+    width: 40%;
+  }
+
+  .profiles .card-image img{
+    width: 100% !important;
+  }
+
+  .profiles .card-image {
+    margin: auto;
+    width: 100%;
+  }
+
 }
-};
+
+@media screen and (max-width: 620px) {
+  .projects {
+    flex-direction: column !important;
+    flex-flow: nowrap;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    width: 90%;
+
+  }
+
+  .card-image img {
+    margin: auto !important;
+  }
+
+  .card-action {
+    width: 95%;
+    margin-left: 0.75em;
+  }
+
+  .profiles {
+    display: flex;
+  }
+
+  .profiles .card {
+    margin: 1.5em;
+    padding: 0;
+    width: 50%;
+  }
+
+  .profiles img{
+    width: 220px;
+  }
+
+}

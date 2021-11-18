@@ -1,44 +1,25 @@
-#hamburger {
-  color: #dddddd;
-}
-
 form {
   align-content: center;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding: 1.5em;
 }
 
-.nav-text {
-  color: #000;
+.form-all {
+  border: #c97c5d .15em solid;
+  border-radius: 2em;
+  padding: 2em 2em 3em;
+
 }
 
-a {
-  color: #000;
-}
-
-h2 {
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.footer {
-  background-color: white;
-  height: 50px;
-  flex-shrink: 0;
-  display: flex;
-}
-
-.footer-txt {
-  color: #ddd;
-  font-size: 8pt;
-}
-
-.fa {
-  margin: 18px 5px 16px 5px;
-  color: #000;
-  width: 40px;
+.input-field {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper {
-    width: 600px;
+  form {
+    width: 100%;
   }
 };
 
