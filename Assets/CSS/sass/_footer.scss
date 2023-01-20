@@ -1,0 +1,21 @@
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: $lightPink;
+    padding: 1em 4em;
+    color: $burntOrange;
+
+    .footer-txt {
+        font-size: 1em;
+    }
+    
+}
+
+.copyright {
+    font-size: 0.75em;
+    margin-top: 1em;
+    color: $burntOrange;
+}
+

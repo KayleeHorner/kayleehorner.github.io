@@ -1,0 +1,124 @@
+nav {
+    width: $fullWidth;
+    background-color: $lightPink;
+    box-shadow: none;
+    height: auto;
+    padding: 0 4em;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: baseline; 
+
+    .social-icons {
+        height: 1.5em;
+
+        .fa-solid, .fa-brands {
+            font-size: 1.25em;
+        }
+    }
+
+    ul {
+        display: flex;
+        margin-top: 1em;
+
+        li {
+            list-style-type: none;
+            margin-left: 1.25em;
+      
+            a {
+                font-family: gopher, sans-serif; 
+                font-size: 1.25em;
+                font-weight: 600;
+                color: $burntOrange;
+                padding: 0;
+            }
+        }
+
+        a:hover, .fa-solid:hover, .fa-brands:hover , .sidenav-trigger:hover,  a:focus, .fa-solids:focus, .fa-brands, .sidenav-trigger:focus {
+            background-color: transparent;
+            color: $midOrange;
+        }
+    }
+
+    .sidenav-trigger {
+        margin: 0em;
+        padding: 0.5em;
+        font-size: 2em;
+    }
+}
+
+.sidenav {
+    background-color: $white;
+
+    li > a {
+        font-family: gopher, sans-serif; 
+        font-size: 1.25em;
+        font-weight: 600;
+        color: $burntOrange;
+
+        :hover {
+            background-color: $lightPink;
+        }
+
+        :last-of-type{
+            margin-top: 1em;
+        }
+    }
+
+   li {
+        .active {
+            background-color: $lightPink;
+        }
+    }
+
+    
+
+    .social-icons {
+        padding: 0 2.25em;
+
+        i {
+            padding-right: 0.75em;
+            font-size: 1.25em;
+        }
+    }
+}
+
+// Media Queries
+@media screen and (min-width: 601px) {
+    nav {
+  
+        .sidenav-trigger {
+            margin: 0 !important;
+            padding: 0 0.5em 0 0 !important;
+  
+            i {
+                font-size: 1.25em !important;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    nav {
+        padding: 0 2em !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .sidenav-trigger {
+        i {
+            margin: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+    nav {
+        padding: 0 0.5em !important;
+    }
+}
+  
+  

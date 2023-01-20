@@ -1,0 +1,352 @@
+.projects {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 2em 4em 0;
+}
+
+.card {
+  background-color: $lightPink;
+  width: 48%;
+  margin: 0 1em 2em 0;
+  box-shadow: none;
+  border: 1.5px solid $lightPink;
+  border-radius: 1em;
+
+  .card-content {
+    padding: 0px !important;
+
+    p {
+      font-size: 0.9em;
+    }
+  }
+
+  .card-action {
+    padding: 10px 2px !important;
+
+    a {
+      color: $burntOrange !important;
+    }
+
+    a:hover {
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .card-reveal {
+    background-color: $white;
+    padding: 1em;
+
+    .card-title {
+      font-family: gopher, sans-serif !important;
+      font-size: 1.25em;
+      text-align: left;
+      font-weight: 400 !important;
+      color: $burntOrange;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      i {
+        font-size: 0.75em;
+        align-self: flex-start;
+      }
+    }
+
+    p,
+    .card-action {
+      font-size: 0.9em;
+    }
+
+    p {
+      margin-top: 1em;
+    }
+  }
+}
+
+.card-image img {
+  width: 96% !important;
+  border-radius: 0.5em !important;
+  margin: 0.65em auto;
+}
+
+.card:hover,
+.card-image img:hover {
+  cursor: pointer;
+  background-color: rgba(236, 236, 236, 0.66);
+  z-index: 1;
+}
+
+#rink-concept-page {
+  .hero {
+    background-color: $white;
+
+    h1, h2 {
+      padding: 0.5em 2em;
+      margin: 0.5em 0 0;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    .hero-img-container {
+      height: 350px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      img {
+        width: $fullWidth;
+        display: flex;
+      }
+    }
+  }
+
+  .project-overview {
+    padding: 2em 4em;
+    justify-content: space-between;
+    width: $fullWidth;
+    
+    div {
+      width: 48%;
+      border: 1.5px solid $lightPink;
+      padding: 1em;
+      border-radius: 1em;
+    }
+
+    h3 {
+      font-weight: 500;
+      line-height: 130%;
+      margin-top: 0.5em;
+    }
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .mockups {
+
+    img {
+      width: 250px;
+    }
+    .caption {
+      text-align: center;
+      font-size: 0.8em;
+    }
+
+    #rink-home-desc, #rink-party-desc, #rink-contact-desc {
+      padding: 2em 4em;
+      display: flex;
+      justify-content: space-between;
+
+      .mockup-description {
+        width: 70%;
+      }
+    }
+
+    #rink-home-desc, #rink-contact-desc {
+      background-color: $lightPink;
+      .mockup-description {
+        padding-right: 1em;
+      }
+    }
+
+    #rink-party-desc {
+      text-align: right;
+      .mockup-description {
+        padding-left: 1em;
+      }
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 992px) {
+  .projects {
+    margin: 1em 1.75em 0;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .card {
+    width: 48% !important;
+    margin-right: 0.25em;
+  }
+}
+
+@media screen and (max-width: 783px) {
+  .projects {
+    margin: 1em 0.5em 0;
+  }
+
+  .card {
+    margin: 0 0.5em 2em 0.5em;
+
+    .card-title {
+      font-size: 1.1em !important;
+    }
+
+    .card-reveal {
+      p {
+        font-size: 0.9em;
+        margin-top: 0.75em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .card {
+    width: 100% !important;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .card-image img {
+    width: 97% !important;
+  }
+
+  .card-reveal {
+    .card-title {
+      font-size: 1.75em !important;
+
+      i {
+        font-size: 1em !important;
+      }
+    }
+
+    p {
+      font-size: 1.25em !important;
+      margin-top: 1em;
+      line-height: 2em;
+    }
+
+    .card-action {
+      font-size: 1.25em !important;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card-reveal {
+    .card-title {
+      font-size: 1.5em !important;
+
+      i {
+        font-size: 1em !important;
+      }
+    }
+
+    p {
+      font-size: 1em !important;
+      margin-top: 1em;
+      line-height: 1.75em;
+    }
+
+    .card-action {
+      font-size: 1em !important;
+    }
+  }
+}
+
+@media screen and (max-width: 610px) {
+  #rink-concept-page {
+    .hero-img-container {
+      height: 200px !important;
+    }
+
+    h1 {
+      font-size: 1.75em;
+    }
+
+    .hero h1, .project-overview {
+      width: $fullWidth;
+    }
+
+    .hero h1, .project-overview, #rink-home-desc, #rink-contact-desc , #rink-party-desc  {
+      padding: 0.5em 1em !important;
+    }
+
+    .project-overview {
+      flex-direction: column;
+      margin-bottom: 0;
+
+      div {
+        width: $fullWidth;
+        margin-bottom: 1em;
+      }
+    }
+
+    .mockups {
+      padding: 2em 0 0;
+
+      img {
+        margin: 0 auto;
+      }
+
+      .mockup-description {
+        width: $fullWidth !important;
+      }
+    }
+
+    #rink-home-desc, #rink-contact-desc {
+      flex-direction: column;
+    }
+    
+    #rink-party-desc {
+      flex-direction: column-reverse;
+      text-align: left !important;
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 460px) {
+  .card-reveal {
+    padding: 1.25em;
+
+    .card-title {
+      font-size: 1.25em !important;
+
+      i {
+        font-size: 0.75em !important;
+      }
+    }
+
+    p {
+      font-size: 0.95em !important;
+      margin-top: 0.75em;
+      line-height: 1.5em;
+    }
+
+    .card-action {
+      font-size: 0.95em !important;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .card-reveal {
+    padding: 1.25em;
+
+    .card-title {
+      font-size: 1.25em !important;
+
+      i {
+        font-size: 0.75em !important;
+      }
+    }
+
+    .goal-p {
+      display: none;
+    }
+
+    .card-action {
+      font-size: 0.95em !important;
+    }
+  }
+}

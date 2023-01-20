@@ -1,235 +1,264 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="UI/UX portfolio for Kansas City based designer, Kaylee Horner">
+    <title>Kaylee Horner | UI/UX Designer</title>
+    <link rel="shortcut icon" href="./Assets/Images/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="./Assets/CSS/icons/fontawesome/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./Assets/CSS/icons/fontawesome/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./Assets/CSS/icons/fontawesome/css/solid.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/ryr3xom.css" />
+    <link rel="stylesheet" href="./Assets/CSS/css/style.min.css" />
+  </head>
 
-<head>
+  <body>
+    <nav>
+      <div class="social-icons hide-on-med-and-down">
+        <a
+          href="https://www.linkedin.com/in/kaylee-horner/"
+          target="blank"
+          alt="Kaylee Horner's LinkedIn Profile"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="https://www.github.com/kayleehorner"
+          target="blank"
+          alt="Kaylee Horner's Github Profile"
+        >
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+        <a
+          href="mailto:kayleeahorner@gmail.com"
+          target="blank"
+          alt="Email Kaylee Horner"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
 
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0" />
-  <title>Kaylee Horner | UI/UX Designer & Front End Developer</title>
-  <link rel="shortcut icon" href="/favicon.svg">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="fa-solid fa-bars"></i>
+      </a>
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
-  <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/zqd8fsw.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="./Assets/CSS/styles.css">
-    <link rel="stylesheet" href="./Assets/CSS/style_index.css">
-    <link rel="stylesheet" href="./Assets/CSS/style_footer.css">
-
-</head>
-
-<body>
- 
-  <nav>
-     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i id="hamburger" class="material-icons">menu</i></a> 
-
-      <img src="Assets/Images/Index/name-header-01.png" class="nav-img brand-logo">
-
-      <ul class="nav-mobile right hide-on-med-and-down"
-        id="nav-mobile">
+      <ul class="nav-mobile right hide-on-med-and-down" id="nav-mobile">
         <li>
           <a class="nav-text active" href="./index.html">Home</a>
         </li>
         <li>
-          <a class="nav-text" href="./portfolio.html">Projects</a>
-        </li>
-        <li>
-          <a class="nav-text" href="./contact.html">Let's Talk</a>
+          <a class="nav-text" href="./about.html">About</a>
         </li>
       </ul>
+    </nav>
 
-
-  </nav>
-
-  <ul class="sidenav" id="mobile-demo">
+    <ul class="sidenav" id="mobile-demo">
       <li class="active">
         <a href="./index.html">Home</a>
       </li>
       <li>
-        <a href="./portfolio.html">Projects</a>
+        <a href="./about.html">About</a>
       </li>
-      <li>
-        <a href="./contact.html">Let's Talk</a>
+      <li class="social-icons">
+        <span>
+          <a
+            href="https://www.linkedin.com/in/kaylee-horner/"
+            target="blank"
+            alt="Kaylee Horner's LinkedIn Profile"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.github.com/kayleehorner"
+            target="blank"
+            alt="Kaylee Horner's Github Profile"
+          >
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+          <a
+            href="mailto:kayleeahorner@gmail.com"
+            target="blank"
+            alt="Email Kaylee Horner"
+          >
+            <i class="fa-solid fa-envelope"></i> </a
+        ></span>
       </li>
-    </ul> 
+    </ul>
 
-    <div class="container"> 
-    <div class="row">
-  
-    <div class="col s12 section">
-      <div class="img-bg">
-        <img class="main-img"
-          src="Assets/Images/Projects/team-generator.png"  alt="Image of example.">
+    <div id="home">
+      <div class="hero">
+        <div>
+          <h1 id="hero-header">Kaylee<br />Horner</h1>
+          <h2 id="hero-subheader">UI/UX Designer</h2>
+        </div>
       </div>
-      <div id="section-1-content">
-        <h1>UI/UX Designer & <br /> Front End Developer</h1>
-        <h2>design it. develop it. create it.</h2>
-        <button><a href="./portfolio.html">Let's Go</a></button>
-      </div>
-    </div>
+      <div id="section-under-hero">
+          <div class="projects">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./Assets/Images/Projects/rink-mock-ui.jpg"
+                  class="activator" alt="Mock up for a small skating rink business." 
+                />
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"
+                  >Skating Rink Website<i class="fa-solid fa-xmark right"></i
+                ></span>
+                 <p>
+                  <span class="proj-p">
+                 <strong>The Project:</strong>  A concept for a local roller skating rink's website. </span>
+                </span>
+                <br/>
+<span class="goal-p">
+                  <strong>The Goal:</strong>  To provide the information that answers commonly asked questions and allows users to book a party online.
+                </span>
+                </p> 
+                <div class="card-action"><a href="./rinkConceptDetails.html">Read More</a></div>
+              </div>
+            </div>
 
-</div>
-</div>
-<div class="row">
-    <div class="section section-full col s12 ">
-      <div class="experience-section">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./Assets/Images/Projects/master-performance-mock-ui.png"
+                  class="activator" alt="Mock up for a strength and performance coach." 
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"
+                  >Performance Training Website: LAUNCHING FEB. 2023<i class="fa-solid fa-xmark right"></i
+                ></span>
+                <p>
+                  <span class="proj-p">
+                 <strong>The Project:</strong>  A website for a remote athlete performance coach. </span>
+                </span>
+                <br/>
+              <span class="goal-p">
+                  <strong>The Goal:</strong>  To provide clients with information on Master Performance training and to purchase Master Performance training plans.
+                </span>
+                </p> 
+                <div class="card-action"><a href="www.masterperformance.net" target="_blank">Visit Master Performance</a></div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div id="section-2-content">
         <div class="full-section-columns">
           <h2>Languages</h2>
           <ul>
             <li>HTML/CSS/SASS</li>
-            <li>JavaScript and jQuery</li>
             <li>React</li>
+            <li>Basic JavaScript and jQuery</li>
             <li>Handlebars</li>
           </ul>
         </div>
         <div class="full-section-columns">
           <h2>Frameworks</h2>
           <ul>
+            <li>Blazor</li>
             <li>Materialize</li>
             <li>Bootstrap</li>
-            <li>Blazor</li>
-
           </ul>
         </div>
         <div class="full-section-columns">
           <h2>Useful Things</h2>
           <ul>
             <li>Git</li>
-            <li>Shopify</li>
+            <li>Shopify & zNode</li>
             <li>Squarespace</li>
-            <li>Adobe XD, Illustrator, InDesign, Photoshop</li>
+            <li>Adobe Creative Suite</li>
+            <li>Mailchimp</li>
           </ul>
         </div>
       </div>
-    </div>
-  </div>
 
-
-    <div class="container">
-    <div class="section section-secondary col s12">
-
-      <div id="section-2-content">
-        <div class="work-info">
-          <h1>The Details</h1>
-          <div>
-            <h3>Experience</h3>
-           
-              <ul>
-                <li>
-                  <strong>UI/UX Designer and Front End Developer</strong>
-                    <ul>
-                      <li><i>Staples Promotional Products, February 2021 - Present</i></li>
-                      <li>Wireframe, mock up, and prototype interactions and design for internal applications and client facing e-commerce sites. Implementation of designs using HTML, CSS, and JavaScript. Review and create requirements for new systems and features in coordination with other departments.</li>
-                    </ul>
-                </li>
-                <!-- <br/> -->
-                <!-- <li>
-                  <strong>Associate Merchandiser</strong>
-                    <ul>
-                      <li><i>Staples Promotional Products, June 2019 - February 2021</i></li>
-                      <li>Assisted with sourcing products for clients based on past sales and needs. Developed and maintained the accuracy of SKUs across programs 
-                        and product menus: including decoration, pricing, and general upkeep. Created presentations and presented to clients. 
-                        Ensured all timelines and customer expectations are met.</li>
-                    </ul>
-                </li> -->
-               
-              </ul>
-          
-            <h3>Education</h3>
-         
-              <ul>
-                <li>
-                  <strong>University of Kansas</strong>
-                  <ul>
-                  <li>Certificate in Full Stack Web Development</li>
-                </ul>
-                </li>
-                <br/>
-                <li>
-                <strong>Kansas State University</strong>
-                  <ul>
-                  <li>B.S. in Apparel Marketing</li>
-                  <li>Minor in Business Administration</li>
-                </ul>
-                </li>
-               
-              </ul>
-         
-       
-              <h3>More?</h3>
-          <p> While most kids spent their summers playing outside or playing video games, I spent my summers in middle school teaching myself HTML/CSS and how to use Paint and GIMP to 
-            run a "button/graphics" page on Neopets. In high school I moved on to
-            the Adobe Suite and grew my skills from there. From working in a t-shirt store doing graphics and production to running my own t-shirt business, I've never
-            strayed far from a creative field. After a year in merchandising, I took on a full stack coding bootcamp to expand my coding knowledge past the basics.
-            Through the course and my current position, I have taken an interest in the front end and UI/UX, allowing me to embrace both my creative and analytical skills.
-
-          </p> 
+      <div id="testimonials">
+        <h1>Testimonials</h1>
+        <div id="testimonial-cards">
+        <div class="card">
+          <div class="card-content">
+          <sup><span>" </span></sup>Kaylee has done an amazing job picking up new concepts and rutting through the behemoth of [our] codebase. 
+            She’s proven herself to have the most coveted trait one can have in this field: adaptability. [She] will find her bearings 
+            and perform her duty resolute, whilst maintaining a growing trove of accumulated knowledge. Adaptable and dependable.<sup><span> "</span></sup> 
+            <div class="quote-source">- Team Member</div>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-content">
+            <sup><span>" </span></sup>The way that [Kaylee tackles her] work is efficient, effective, and flexible — which ... results in faster feature delivery. 
+            [She is] open to input and feedback from all participants and [partners] with the developers ... directly without needing involvement 
+            from [others]. [She is] not afraid to ask questions and typically [has] alternatives/solution options available to review.<sup><span> "</span></sup>
+            <div class="quote-source">- Project Manager</div>
+
+          </div>
         </div>
-        <div>
-        <div class="img-bg" style="
-      border-radius: 191% 448% 137% 354%;">
-          <img src="Assets/Images/Index/about-page-01.png"
-            class="main-img">
+
+        <div class="card">
+          <div class="card-content">
+
+
+<sup><span>" </span></sup>[Kaylee has] picked up on new technologies with a speed we had not expected from someone just entering the field,
+ whether it be learning new technologies ... or working as a UI designer. She took on the [redacted] user interface 
+ and in short order was working independently. It’s highly unusual for anyone entering the field of UI design to take 
+ off that quickly...[The UI] gets high praise from the end users of the application and requires very little training 
+for new associates to ... start working in. <sup><span> "</span></sup>
+ <div class="quote-source">- Manager</div>
+          </div>
         </div>
       </div>
     </div>
-
-
-    </div>
-
   </div>
-
-
-    <!-- <div class="section white">
-      <div class="row container">
-        <p class="grey-text text-darken-3 lighten-3">
-          <h3>Resume</h3> 
-          <embed src="./Assets/Files/Resume.pdf" type="application/pdf" width="100%" height="600px" />
-        </p>
+    <footer class="footer">
+      <div class="footer-txt">
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/kaylee-horner/"
+            target="blank"
+            alt="Kaylee Horner's LinkedIn Profile"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.github.com/kayleehorner"
+            target="blank"
+            alt="Kaylee Horner's Github Profile"
+          >
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+          <a
+            href="mailto:kayleeahorner@gmail.com"
+            target="blank"
+            alt="Email Kaylee Horner"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+        <div class="copyright">Copyright 2022 - Kaylee Horner</div>
       </div>
-    </div> -->
-  </div>
+    </footer>
 
-  <footer class="footer">
-
-
-
-
-    <div class="footer-txt">
-      <a href="https://www.linkedin.com/in/kaylee-horner"
-        target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="https://www.github.com/kayleehorner" target="_blank"><i
-          class="fa fa-github"></i></a>
-      <a href="mailto:kayleeahorner@gmail.com" target="_blank"><i
-          class="fa fa-envelope"></i></a>
-
-      <div class="copyright">
-        Copyright 2021 - Kaylee Horner
-      </div>
-    </div>
-  </footer>
-
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous">
-    </script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous">
-    </script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="./Assets/JS/script.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./Assets/JS/script.js"></script>
+  </body>
 </html>

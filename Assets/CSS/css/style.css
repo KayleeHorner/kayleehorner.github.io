@@ -1,0 +1,699 @@
+h1 {
+  font-family: gopher, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 0.95em;
+  color: #ae5532;
+}
+
+h2 {
+  font-family: gopher, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #ae5532;
+}
+
+h3 {
+  font-family: gopher, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  color: #ae5532;
+}
+
+a {
+  text-decoration: none;
+  color: #ae5532;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+a:hover, .fa-brands:hover, .fa-solid:hover {
+  color: #c56d4a;
+  cursor: pointer;
+}
+
+.social-icons a, .social-icons i, .sidenav-trigger a, .sidenav-trigger i {
+  color: #ae5532;
+}
+
+.sidenav-trigger a {
+  margin: 0.5em;
+}
+
+#about-page h1 {
+  margin-bottom: 0.5em !important;
+}
+#about-page h2 {
+  margin-top: 1em;
+}
+#about-page #about-content {
+  padding: 1em 4em;
+}
+#about-page .row {
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+#about-page .card {
+  border: 1.5px solid #f0e2dd;
+  padding: 0.75em;
+  border-radius: 1em;
+  background-color: #f7f7f7;
+}
+#about-page .card:hover {
+  pointer-events: none;
+}
+#about-page .work-info ul li {
+  list-style-type: circle;
+}
+#about-page .work-info ul:not(.browser-default) {
+  padding-left: 1em;
+}
+#about-page .other-info {
+  width: 100%;
+  margin-top: 0;
+}
+@media screen and (max-width: 866px) {
+  #about-page .row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  #about-page .row .card {
+    margin-bottom: 1em;
+  }
+  #about-page .card {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 770px) {
+  #about-page .card {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 610px) {
+  #about-page #about-content {
+    padding: 1em 2em;
+  }
+}
+@media screen and (max-width: 470px) {
+  #about-page .card {
+    font-size: 0.9em;
+  }
+}
+
+#about-page, #about-content {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #f0e2dd;
+  padding: 1em 4em;
+  color: #ae5532;
+}
+footer .footer-txt {
+  font-size: 1em;
+}
+
+.copyright {
+  font-size: 0.75em;
+  margin-top: 1em;
+  color: #ae5532;
+}
+
+#home .hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 4em;
+  background-color: #f0e2dd;
+}
+#home .hero #hero-header {
+  font-size: 10em;
+  margin: 0;
+}
+#home .hero #hero-subheader {
+  font-family: gopher, sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0.75em 0 0 0.35em;
+}
+#home ul {
+  padding-left: 0;
+}
+#home #section-under-hero {
+  background-color: #f7f7f7;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+#home #section-under-hero li {
+  list-style-type: none;
+}
+#home #section-under-hero h3 {
+  color: #ae5532;
+}
+#home #section-2-content {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f0e2dd;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+#home #section-2-content li {
+  list-style-type: none;
+}
+#home #section-2-content h2, #home #section-2-content h1, #home #testimonials h2, #home #testimonials h1 {
+  font-weight: 500;
+  margin: 0.25em 0;
+}
+#home #testimonials {
+  background-color: #f0e2dd;
+  width: 100%;
+  padding: 2em 4em;
+}
+#home #testimonials #testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#home #testimonials #testimonial-cards .card {
+  padding: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  background-color: #f7f7f7;
+}
+#home #testimonials #testimonial-cards .card .card-content {
+  font-size: 1.15em;
+}
+#home #testimonials #testimonial-cards .card .card-content .quote-source, #home #testimonials #testimonial-cards .card .card-content span {
+  font-family: "gopher", sans-serif;
+  color: #c56d4a;
+}
+#home #testimonials #testimonial-cards .card .card-content span {
+  font-size: 1.25em;
+}
+#home #testimonials #testimonial-cards .card .card-content .quote-source {
+  text-align: center;
+  margin-top: 0.5em;
+}
+#home #testimonials #testimonial-cards .card:hover {
+  pointer-events: none;
+}
+@media screen and (max-width: 992px) {
+  #home .hero {
+    padding: 1em 1.75em;
+  }
+  #home .hero #hero-header {
+    font-size: 9em;
+  }
+}
+@media screen and (max-width: 970px) {
+  #home h1 {
+    font-size: 1.75em;
+  }
+  #home #section-under-hero {
+    margin: 0 1em;
+  }
+}
+@media screen and (max-width: 820px) {
+  #home .main-img {
+    width: 350px;
+    margin-left: 8em;
+  }
+}
+@media screen and (max-width: 785px) {
+  #home #testimonials .card {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  #home .hero #hero-header {
+    font-size: 7em;
+  }
+}
+@media screen and (max-width: 610px) {
+  #home .hero {
+    padding: 1.5em !important;
+  }
+  #home .hero #hero-header {
+    font-size: 6em;
+  }
+  #home .hero #hero-subheader {
+    margin: 0.25em 0 0 0.15em !important;
+  }
+  #home #section-2-content {
+    flex-direction: column-reverse;
+    padding: 2em 0;
+  }
+  #home #testimonials {
+    padding: 2em 2em;
+  }
+  #home #testimonials .card {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 450px) {
+  #home .hero {
+    padding: 1.5em !important;
+  }
+  #home .hero #hero-header {
+    font-size: 3.5em;
+  }
+  #home .hero #hero-subheader {
+    font-size: 1.25em !important;
+    margin: 0.25em 0 0 0 !important;
+  }
+}
+
+body {
+  font-family: open-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background: #f7f7f7;
+  height: 100%;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+  -webkit-animation: fadeInAnimation ease 1.5s;
+          animation: fadeInAnimation ease 1.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.row {
+  display: flex;
+}
+
+.white-bg {
+  background-color: #f7f7f7;
+}
+
+.pink-bg {
+  background-color: #f0e2dd;
+}
+
+#octo-extension-root {
+  background-color: #f0e2dd;
+  display: none;
+}
+
+nav {
+  width: 100%;
+  background-color: #f0e2dd;
+  box-shadow: none;
+  height: auto;
+  padding: 0 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+nav .social-icons {
+  height: 1.5em;
+}
+nav .social-icons .fa-solid, nav .social-icons .fa-brands {
+  font-size: 1.25em;
+}
+nav ul {
+  display: flex;
+  margin-top: 1em;
+}
+nav ul li {
+  list-style-type: none;
+  margin-left: 1.25em;
+}
+nav ul li a {
+  font-family: gopher, sans-serif;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #ae5532;
+  padding: 0;
+}
+nav ul a:hover, nav ul .fa-solid:hover, nav ul .fa-brands:hover, nav ul .sidenav-trigger:hover, nav ul a:focus, nav ul .fa-solids:focus, nav ul .fa-brands, nav ul .sidenav-trigger:focus {
+  background-color: transparent;
+  color: #c56d4a;
+}
+nav .sidenav-trigger {
+  margin: 0em;
+  padding: 0.5em;
+  font-size: 2em;
+}
+
+.sidenav {
+  background-color: #f7f7f7;
+}
+.sidenav li > a {
+  font-family: gopher, sans-serif;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #ae5532;
+}
+.sidenav li > a :hover {
+  background-color: #f0e2dd;
+}
+.sidenav li > a :last-of-type {
+  margin-top: 1em;
+}
+.sidenav li .active {
+  background-color: #f0e2dd;
+}
+.sidenav .social-icons {
+  padding: 0 2.25em;
+}
+.sidenav .social-icons i {
+  padding-right: 0.75em;
+  font-size: 1.25em;
+}
+
+@media screen and (min-width: 601px) {
+  nav .sidenav-trigger {
+    margin: 0 !important;
+    padding: 0 0.5em 0 0 !important;
+  }
+  nav .sidenav-trigger i {
+    font-size: 1.25em !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 0 2em !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  .sidenav-trigger i {
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 610px) {
+  nav {
+    padding: 0 0.5em !important;
+  }
+}
+.projects {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 2em 4em 0;
+}
+
+.card {
+  background-color: #f0e2dd;
+  width: 48%;
+  margin: 0 1em 2em 0;
+  box-shadow: none;
+  border: 1.5px solid #f0e2dd;
+  border-radius: 1em;
+}
+.card .card-content {
+  padding: 0px !important;
+}
+.card .card-content p {
+  font-size: 0.9em;
+}
+.card .card-action {
+  padding: 10px 2px !important;
+}
+.card .card-action a {
+  color: #ae5532 !important;
+}
+.card .card-action a:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+.card .card-reveal {
+  background-color: #f7f7f7;
+  padding: 1em;
+}
+.card .card-reveal .card-title {
+  font-family: gopher, sans-serif !important;
+  font-size: 1.25em;
+  text-align: left;
+  font-weight: 400 !important;
+  color: #ae5532;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .card-reveal .card-title i {
+  font-size: 0.75em;
+  align-self: flex-start;
+}
+.card .card-reveal p,
+.card .card-reveal .card-action {
+  font-size: 0.9em;
+}
+.card .card-reveal p {
+  margin-top: 1em;
+}
+
+.card-image img {
+  width: 96% !important;
+  border-radius: 0.5em !important;
+  margin: 0.65em auto;
+}
+
+.card:hover,
+.card-image img:hover {
+  cursor: pointer;
+  background-color: rgba(236, 236, 236, 0.66);
+  z-index: 1;
+}
+
+#rink-concept-page .hero {
+  background-color: #f7f7f7;
+}
+#rink-concept-page .hero h1, #rink-concept-page .hero h2 {
+  padding: 0.5em 2em;
+  margin: 0.5em 0 0;
+}
+#rink-concept-page .hero h3 {
+  margin: 0;
+}
+#rink-concept-page .hero .hero-img-container {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+#rink-concept-page .hero .hero-img-container img {
+  width: 100%;
+  display: flex;
+}
+#rink-concept-page .project-overview {
+  padding: 2em 4em;
+  justify-content: space-between;
+  width: 100%;
+}
+#rink-concept-page .project-overview div {
+  width: 48%;
+  border: 1.5px solid #f0e2dd;
+  padding: 1em;
+  border-radius: 1em;
+}
+#rink-concept-page .project-overview h3 {
+  font-weight: 500;
+  line-height: 130%;
+  margin-top: 0.5em;
+}
+#rink-concept-page .project-overview h2 {
+  margin: 0;
+}
+#rink-concept-page .mockups img {
+  width: 250px;
+}
+#rink-concept-page .mockups .caption {
+  text-align: center;
+  font-size: 0.8em;
+}
+#rink-concept-page .mockups #rink-home-desc, #rink-concept-page .mockups #rink-party-desc, #rink-concept-page .mockups #rink-contact-desc {
+  padding: 2em 4em;
+  display: flex;
+  justify-content: space-between;
+}
+#rink-concept-page .mockups #rink-home-desc .mockup-description, #rink-concept-page .mockups #rink-party-desc .mockup-description, #rink-concept-page .mockups #rink-contact-desc .mockup-description {
+  width: 70%;
+}
+#rink-concept-page .mockups #rink-home-desc, #rink-concept-page .mockups #rink-contact-desc {
+  background-color: #f0e2dd;
+}
+#rink-concept-page .mockups #rink-home-desc .mockup-description, #rink-concept-page .mockups #rink-contact-desc .mockup-description {
+  padding-right: 1em;
+}
+#rink-concept-page .mockups #rink-party-desc {
+  text-align: right;
+}
+#rink-concept-page .mockups #rink-party-desc .mockup-description {
+  padding-left: 1em;
+}
+
+@media screen and (max-width: 992px) {
+  .projects {
+    margin: 1em 1.75em 0;
+  }
+}
+@media screen and (max-width: 866px) {
+  .card {
+    width: 48% !important;
+    margin-right: 0.25em;
+  }
+}
+@media screen and (max-width: 783px) {
+  .projects {
+    margin: 1em 0.5em 0;
+  }
+  .card {
+    margin: 0 0.5em 2em 0.5em;
+  }
+  .card .card-title {
+    font-size: 1.1em !important;
+  }
+  .card .card-reveal p {
+    font-size: 0.9em;
+    margin-top: 0.75em;
+  }
+}
+@media screen and (max-width: 770px) {
+  .card {
+    width: 100% !important;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .card-image img {
+    width: 97% !important;
+  }
+  .card-reveal .card-title {
+    font-size: 1.75em !important;
+  }
+  .card-reveal .card-title i {
+    font-size: 1em !important;
+  }
+  .card-reveal p {
+    font-size: 1.25em !important;
+    margin-top: 1em;
+    line-height: 2em;
+  }
+  .card-reveal .card-action {
+    font-size: 1.25em !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .card-reveal .card-title {
+    font-size: 1.5em !important;
+  }
+  .card-reveal .card-title i {
+    font-size: 1em !important;
+  }
+  .card-reveal p {
+    font-size: 1em !important;
+    margin-top: 1em;
+    line-height: 1.75em;
+  }
+  .card-reveal .card-action {
+    font-size: 1em !important;
+  }
+}
+@media screen and (max-width: 610px) {
+  #rink-concept-page .hero-img-container {
+    height: 200px !important;
+  }
+  #rink-concept-page h1 {
+    font-size: 1.75em;
+  }
+  #rink-concept-page .hero h1, #rink-concept-page .project-overview {
+    width: 100%;
+  }
+  #rink-concept-page .hero h1, #rink-concept-page .project-overview, #rink-concept-page #rink-home-desc, #rink-concept-page #rink-contact-desc, #rink-concept-page #rink-party-desc {
+    padding: 0.5em 1em !important;
+  }
+  #rink-concept-page .project-overview {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  #rink-concept-page .project-overview div {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  #rink-concept-page .mockups {
+    padding: 2em 0 0;
+  }
+  #rink-concept-page .mockups img {
+    margin: 0 auto;
+  }
+  #rink-concept-page .mockups .mockup-description {
+    width: 100% !important;
+  }
+  #rink-concept-page #rink-home-desc, #rink-concept-page #rink-contact-desc {
+    flex-direction: column;
+  }
+  #rink-concept-page #rink-party-desc {
+    flex-direction: column-reverse;
+    text-align: left !important;
+  }
+}
+@media screen and (max-width: 460px) {
+  .card-reveal {
+    padding: 1.25em;
+  }
+  .card-reveal .card-title {
+    font-size: 1.25em !important;
+  }
+  .card-reveal .card-title i {
+    font-size: 0.75em !important;
+  }
+  .card-reveal p {
+    font-size: 0.95em !important;
+    margin-top: 0.75em;
+    line-height: 1.5em;
+  }
+  .card-reveal .card-action {
+    font-size: 0.95em !important;
+  }
+}
+@media screen and (max-width: 440px) {
+  .card-reveal {
+    padding: 1.25em;
+  }
+  .card-reveal .card-title {
+    font-size: 1.25em !important;
+  }
+  .card-reveal .card-title i {
+    font-size: 0.75em !important;
+  }
+  .card-reveal .goal-p {
+    display: none;
+  }
+  .card-reveal .card-action {
+    font-size: 0.95em !important;
+  }
+}/*# sourceMappingURL=style.css.map */

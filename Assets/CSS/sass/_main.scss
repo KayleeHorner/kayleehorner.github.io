@@ -1,0 +1,39 @@
+body {
+    font-family: open-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background: $white;
+    height: $fullWidth;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.row {
+    display: flex;
+}
+
+.white-bg {
+    background-color: $white;
+}
+
+.pink-bg {
+    background-color: $lightPink;
+}
+
+#octo-extension-root {
+    background-color: $lightPink;
+    display: none;
+}
